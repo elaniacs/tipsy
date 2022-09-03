@@ -16,8 +16,13 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var splitNumberLabel: UILabel!
     
     var tip = 0.1
+    var numberOfPeople = 2.0
+    
     
     @IBAction func tipChanged(_ sender: UIButton) {
+        
+        billTextField.endEditing(true)
+        
         zeroPctButton.isSelected = false
         tenPctButton.isSelected = false
         twentyPctButton.isSelected = false
@@ -34,16 +39,20 @@ class CalculatorViewController: UIViewController {
         let buttonTitleAsANumber = Double(buttonTitleMinusPercentSign)!
         
         //Divide the percent expressed out of 100 into a decimal e.g. 10 becomes 0.1
-        tip = buttonTitleAsANumber / 100
-
+        tip = (buttonTitleAsANumber / 100) + 1
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        splitNumberLabel.text = String(format: "%.0f", sender.value)
+        numberOfPeople = sender.value
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        print(tip)
+        if let billValue = billTextField.text {
+            if let billTextFieldToDouble = Double(billValue) {
+                let result = (String(format: "%.2f", (billTextFieldToDouble * tip) / numberOfPeople))
+                print(result)
+            }
+        }
     }
-
 }
-
