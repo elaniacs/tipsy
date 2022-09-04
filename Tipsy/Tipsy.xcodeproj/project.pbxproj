@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7390635128C5238B00B489C2 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7390635028C5238B00B489C2 /* CalculatorBrain.swift */; };
 		73D6896428C22D4000FE2419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6896328C22D4000FE2419 /* AppDelegate.swift */; };
 		73D6896628C22D4000FE2419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6896528C22D4000FE2419 /* SceneDelegate.swift */; };
 		73D6896B28C22D4000FE2419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D6896928C22D4000FE2419 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7390635028C5238B00B489C2 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		73D6896028C22D4000FE2419 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D6896328C22D4000FE2419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D6896528C22D4000FE2419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7390634E28C522B700B489C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73D6896928C22D4000FE2419 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7390634F28C522CF00B489C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7390635028C5238B00B489C2 /* CalculatorBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		73D6895728C22D4000FE2419 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +78,9 @@
 			children = (
 				73D6896328C22D4000FE2419 /* AppDelegate.swift */,
 				73D6896528C22D4000FE2419 /* SceneDelegate.swift */,
+				7390634F28C522CF00B489C2 /* Models */,
+				7390634E28C522B700B489C2 /* View */,
 				73D6898228C2357B00FE2419 /* Controllers */,
-				73D6896928C22D4000FE2419 /* Main.storyboard */,
 				73D6896C28C22D4200FE2419 /* Assets.xcassets */,
 				73D6897728C22F3800FE2419 /* LaunchScreenCS.storyboard */,
 				73D6897128C22D4200FE2419 /* Info.plist */,
@@ -152,6 +171,7 @@
 				73D6898628C2380000FE2419 /* CalculatorViewController.swift in Sources */,
 				73D6896428C22D4000FE2419 /* AppDelegate.swift in Sources */,
 				73D6896628C22D4000FE2419 /* SceneDelegate.swift in Sources */,
+				7390635128C5238B00B489C2 /* CalculatorBrain.swift in Sources */,
 				73D6898428C235A600FE2419 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
