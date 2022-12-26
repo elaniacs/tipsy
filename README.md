@@ -1,5 +1,3 @@
-# tipsy
-
 ## Objective
 
 To create multi-screen applications using segues.
@@ -16,5 +14,7 @@ All you have to do is enter the total amount of the bill, the tip, and how many 
 * Optional binding
 * Pass by value vs. pass by reference
 * Formatting strings
+
+![image](https://user-images.githubusercontent.com/84935536/209581477-a1878b6b-20ab-4065-9785-3858ecec1081.png)
 
 
